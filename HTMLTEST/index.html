@@ -1,0 +1,34 @@
+<form id="imageForm" enctype="multipart/form-data">
+  <label for="imageUrl">URL de la imagen (opcional):</label>
+  <input type="text" id="imageUrl" name="imageUrl">
+  <label for="imageFile">Subir imagen:</label>
+  <input type="file" id="imageFile" name="imageFile">
+  <button type="submit">Enviar</button>
+</form>
+
+<p id="predictionResult"></p>
+
+<script>
+  document.getElementById('imageForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const imageUrl = document.getElementById('imageUrl').value;
+    const imageFile = document.getElementById('imageFile').files[0];
+    const formData = new FormData();
+    formData.append('imageUrl', imageUrl);
+    formData.append('imageFile', imageFile);
+    
+    fetch('http://127.0.0.1:5000/analizar_imagen', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      const prediction = data.prediction;
+      const resultText = prediction >= 50.0 ? 'Maligno' : 'Benigno';
+      document.getElementById('predictionResult').textContent = `Predicción: ${resultText} (Probabilidad: ${prediction})`;
+    })
+    .catch(error => {
+      console.error('Error al enviar la imagen al servidor:', error);
+    });
+  });
+</script>

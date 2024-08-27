@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>user module &mdash; documentación de documentation_API - 07/2024</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=47d6d466"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=efdbd0b9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="analyze module" href="analyze.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            documentation_API
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">HTTP</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analyze.html">analyze module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">user module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#user.add_Resultado"><code class="docutils literal notranslate"><span class="pre">add_Resultado()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.add_Resultado_simple"><code class="docutils literal notranslate"><span class="pre">add_Resultado_simple()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.add_user"><code class="docutils literal notranslate"><span class="pre">add_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.addfecha"><code class="docutils literal notranslate"><span class="pre">addfecha()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.changePasswd"><code class="docutils literal notranslate"><span class="pre">changePasswd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.colorRisk"><code class="docutils literal notranslate"><span class="pre">colorRisk()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.crear_directorio_usuario"><code class="docutils literal notranslate"><span class="pre">crear_directorio_usuario()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.crear_tabla_usuario"><code class="docutils literal notranslate"><span class="pre">crear_tabla_usuario()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.delete_marker"><code class="docutils literal notranslate"><span class="pre">delete_marker()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.delete_marker_Simple"><code class="docutils literal notranslate"><span class="pre">delete_marker_Simple()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.delete_reg__historial"><code class="docutils literal notranslate"><span class="pre">delete_reg__historial()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.delete_user"><code class="docutils literal notranslate"><span class="pre">delete_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.deletefecha"><code class="docutils literal notranslate"><span class="pre">deletefecha()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.enviar_codigo"><code class="docutils literal notranslate"><span class="pre">enviar_codigo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.forgot_passwd"><code class="docutils literal notranslate"><span class="pre">forgot_passwd()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.generate_validation_code"><code class="docutils literal notranslate"><span class="pre">generate_validation_code()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.get_estadisticas"><code class="docutils literal notranslate"><span class="pre">get_estadisticas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.get_historial"><code class="docutils literal notranslate"><span class="pre">get_historial()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.get_id"><code class="docutils literal notranslate"><span class="pre">get_id()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.get_markers_Simple"><code class="docutils literal notranslate"><span class="pre">get_markers_Simple()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.get_perfil_image"><code class="docutils literal notranslate"><span class="pre">get_perfil_image()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.get_user_profile"><code class="docutils literal notranslate"><span class="pre">get_user_profile()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.hello"><code class="docutils literal notranslate"><span class="pre">hello()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.log_user"><code class="docutils literal notranslate"><span class="pre">log_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.obtener_fechas"><code class="docutils literal notranslate"><span class="pre">obtener_fechas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.obtener_galeria"><code class="docutils literal notranslate"><span class="pre">obtener_galeria()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.obtener_markers"><code class="docutils literal notranslate"><span class="pre">obtener_markers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.procesar_url"><code class="docutils literal notranslate"><span class="pre">procesar_url()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.protected"><code class="docutils literal notranslate"><span class="pre">protected()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.schedule_email"><code class="docutils literal notranslate"><span class="pre">schedule_email()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.sendMailToServer"><code class="docutils literal notranslate"><span class="pre">sendMailToServer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.sendMailToServer_simple"><code class="docutils literal notranslate"><span class="pre">sendMailToServer_simple()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.send_basic_mail"><code class="docutils literal notranslate"><span class="pre">send_basic_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.send_recordatorio"><code class="docutils literal notranslate"><span class="pre">send_recordatorio()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.send_validation_code"><code class="docutils literal notranslate"><span class="pre">send_validation_code()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.set_perfil_image"><code class="docutils literal notranslate"><span class="pre">set_perfil_image()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.set_user_profile"><code class="docutils literal notranslate"><span class="pre">set_user_profile()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.to_path64"><code class="docutils literal notranslate"><span class="pre">to_path64()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.to_pathWEB"><code class="docutils literal notranslate"><span class="pre">to_pathWEB()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.update_analisis"><code class="docutils literal notranslate"><span class="pre">update_analisis()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user.validate_user"><code class="docutils literal notranslate"><span class="pre">validate_user()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="analyze.html">analyze module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">user module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#user.add_Resultado"><code class="docutils literal notranslate"><span class="pre">add_Resultado()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.add_Resultado_simple"><code class="docutils literal notranslate"><span class="pre">add_Resultado_simple()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.add_user"><code class="docutils literal notranslate"><span class="pre">add_user()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.addfecha"><code class="docutils literal notranslate"><span class="pre">addfecha()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.changePasswd"><code class="docutils literal notranslate"><span class="pre">changePasswd()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.colorRisk"><code class="docutils literal notranslate"><span class="pre">colorRisk()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.crear_directorio_usuario"><code class="docutils literal notranslate"><span class="pre">crear_directorio_usuario()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.crear_tabla_usuario"><code class="docutils literal notranslate"><span class="pre">crear_tabla_usuario()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.delete_marker"><code class="docutils literal notranslate"><span class="pre">delete_marker()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.delete_marker_Simple"><code class="docutils literal notranslate"><span class="pre">delete_marker_Simple()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.delete_reg__historial"><code class="docutils literal notranslate"><span class="pre">delete_reg__historial()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.delete_user"><code class="docutils literal notranslate"><span class="pre">delete_user()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.deletefecha"><code class="docutils literal notranslate"><span class="pre">deletefecha()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.enviar_codigo"><code class="docutils literal notranslate"><span class="pre">enviar_codigo()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.forgot_passwd"><code class="docutils literal notranslate"><span class="pre">forgot_passwd()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.generate_validation_code"><code class="docutils literal notranslate"><span class="pre">generate_validation_code()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.get_estadisticas"><code class="docutils literal notranslate"><span class="pre">get_estadisticas()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.get_historial"><code class="docutils literal notranslate"><span class="pre">get_historial()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.get_id"><code class="docutils literal notranslate"><span class="pre">get_id()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.get_markers_Simple"><code class="docutils literal notranslate"><span class="pre">get_markers_Simple()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.get_perfil_image"><code class="docutils literal notranslate"><span class="pre">get_perfil_image()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.get_user_profile"><code class="docutils literal notranslate"><span class="pre">get_user_profile()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.hello"><code class="docutils literal notranslate"><span class="pre">hello()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.log_user"><code class="docutils literal notranslate"><span class="pre">log_user()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.obtener_fechas"><code class="docutils literal notranslate"><span class="pre">obtener_fechas()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.obtener_galeria"><code class="docutils literal notranslate"><span class="pre">obtener_galeria()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.obtener_markers"><code class="docutils literal notranslate"><span class="pre">obtener_markers()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.procesar_url"><code class="docutils literal notranslate"><span class="pre">procesar_url()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.protected"><code class="docutils literal notranslate"><span class="pre">protected()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.schedule_email"><code class="docutils literal notranslate"><span class="pre">schedule_email()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.sendMailToServer"><code class="docutils literal notranslate"><span class="pre">sendMailToServer()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.sendMailToServer_simple"><code class="docutils literal notranslate"><span class="pre">sendMailToServer_simple()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.send_basic_mail"><code class="docutils literal notranslate"><span class="pre">send_basic_mail()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.send_recordatorio"><code class="docutils literal notranslate"><span class="pre">send_recordatorio()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.send_validation_code"><code class="docutils literal notranslate"><span class="pre">send_validation_code()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.set_perfil_image"><code class="docutils literal notranslate"><span class="pre">set_perfil_image()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.set_user_profile"><code class="docutils literal notranslate"><span class="pre">set_user_profile()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.to_path64"><code class="docutils literal notranslate"><span class="pre">to_path64()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.to_pathWEB"><code class="docutils literal notranslate"><span class="pre">to_pathWEB()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.update_analisis"><code class="docutils literal notranslate"><span class="pre">update_analisis()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user.validate_user"><code class="docutils literal notranslate"><span class="pre">validate_user()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">documentation_API</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">HTTP</a></li>
+      <li class="breadcrumb-item active">user module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/user.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-user">
+<span id="user-module"></span><h1>user module<a class="headerlink" href="#module-user" title="Link to this heading"></a></h1>
+<p>Este módulo proporciona un servidor Flask para la gestión de usuarios y de todos sus datos.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="user.add_Resultado">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">add_Resultado</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.add_Resultado" title="Link to this definition"></a></dt>
+<dd><p>Agregar un nuevo análisis del seguimiento a la base de datos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- x (int): Coordenada X de la lesión.
+- y (int): Coordenada Y de la lesión.
+- lugar (str): Lugar de la lesión en el cuerpo.
+- body (str): Lugar de la lesión en el cuerpo(frontal/trasera).
+- imagen (str): Imagen en Base64.
+- predicciones (str): Array con las predicciones.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.add_Resultado_simple">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">add_Resultado_simple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.add_Resultado_simple" title="Link to this definition"></a></dt>
+<dd><p>Agregar un nuevo análisis de cribado a la base de datos del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- imagen (str): Imagen en Base64.
+- predicciones (str): Array con las predicciones.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.add_user">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">add_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.add_user" title="Link to this definition"></a></dt>
+<dd><p>Agregar un nuevo usuario a la base de datos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- name (str): Nombre del usuario.
+- surname (str): Apellido del usuario.
+- username (str): Nombre de usuario.
+- password (str): Contraseña del usuario.
+- email (str): Correo electrónico del usuario.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.addfecha">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">addfecha</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.addfecha" title="Link to this definition"></a></dt>
+<dd><p>Añadir recordatorio y programar envio del mismo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>dict</strong> – JSON con los datos del formulario que contiene:
+- recordatorio (str): Mensaje de recordatorio.
+- fecha (str): Fecha del recordatorio.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.changePasswd">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">changePasswd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.changePasswd" title="Link to this definition"></a></dt>
+<dd><p>Actualizar la contraseña del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>dict</strong> – JSON con los datos del formulario que contiene:.
+- password (str): Nueva contraseña.
+- password2 (str): Confirmación de la nueva contraseña.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.colorRisk">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">colorRisk</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">probabilidad</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.colorRisk" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.crear_directorio_usuario">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">crear_directorio_usuario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.crear_directorio_usuario" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.crear_tabla_usuario">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">crear_tabla_usuario</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">usuario</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.crear_tabla_usuario" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.delete_marker">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">delete_marker</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.delete_marker" title="Link to this definition"></a></dt>
+<dd><p>Eliminar una lesión del seguimiento a la base de datos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- id (int): Identificador de la lesión.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.delete_marker_Simple">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">delete_marker_Simple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.delete_marker_Simple" title="Link to this definition"></a></dt>
+<dd><p>Eliminar una lesión del cribado del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- id (int): Identificador de la lesión.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.delete_reg__historial">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">delete_reg__historial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.delete_reg__historial" title="Link to this definition"></a></dt>
+<dd><p>Eliminar un registro del historial de una lesión del seguimiento.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- subId (int): Identificador del registro historico de la lesión.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.delete_user">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">delete_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.delete_user" title="Link to this definition"></a></dt>
+<dd><p>Elimina un usuario del sistema, borrandolo de la base de datos
+e eliminando su directorio.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.deletefecha">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">deletefecha</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.deletefecha" title="Link to this definition"></a></dt>
+<dd><p>Eliminar recordatorio y el trabajo de envio del mismo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>dict</strong> – JSON que contiene:
+- id_recordatorio (str): Id del recordatorio.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.enviar_codigo">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">enviar_codigo</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.enviar_codigo" title="Link to this definition"></a></dt>
+<dd><p>Envia el código de validación al usuario dado.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- username (str): Nombre de usuario.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.forgot_passwd">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">forgot_passwd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.forgot_passwd" title="Link to this definition"></a></dt>
+<dd><p>Comprueba y cambia la contraseña de un usuario que la haya olvidado.
+Usa el codigo de validación como 2FA enviandoselo al correo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- username (str): Nombre de usuario.
+- password (str): Nueva ontraseña del usuario.
+- code (str): Código de validación del usuario.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.generate_validation_code">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">generate_validation_code</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.generate_validation_code" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.get_estadisticas">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">get_estadisticas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.get_estadisticas" title="Link to this definition"></a></dt>
+<dd><p>Obtener las estadísticas de un usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Una lista de diccionarios que contienen las estadísticas.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.get_historial">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">get_historial</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.get_historial" title="Link to this definition"></a></dt>
+<dd><p>Conseguir el historial de una lesión de la base de datos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- id (int): Identificador de la lesión.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Una lista de diccionarios que contiene los detalles del historial.</dt><dd><p>Cada diccionario tiene las siguientes claves:
+- id (int): Identificador único.
+- subId (int): Identificador secundario.
+- dia (int): Día del evento.
+- mes (int): Mes del evento.
+- año (int): Año del evento.
+- imagen (str): Imagen en formato base64.
+- probabilidad (str): Probabilidad calculada.
+- predicciones (str): Lista de predicciones.
+- color (str): Color asociado a la predicción.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.get_id">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">get_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.get_id" title="Link to this definition"></a></dt>
+<dd><p>Obtener el ID del usuario autenticado.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>JSON con el ID del usuario.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.get_markers_Simple">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">get_markers_Simple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.get_markers_Simple" title="Link to this definition"></a></dt>
+<dd><p>Obtener todas las lesiones de cribado de un usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>JSON que contiene:</dt><dd><ul class="simple">
+<li><p>id (int): Identificador de la lesión..</p></li>
+<li><p>imagen (str): Imagen en Base64.</p></li>
+<li><p>probabilidad (str): Probabilidad de malignidad.</p></li>
+<li><p>predicciones (str): Array con las predicciones.</p></li>
+<li><p>color (str): Color asociado al riesgo.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.get_perfil_image">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">get_perfil_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.get_perfil_image" title="Link to this definition"></a></dt>
+<dd><p>Obtener la imagen de perfil del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>JSON que contiene:</dt><dd><ul class="simple">
+<li><p>imagen (str): Imagen codificada en Base64.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.get_user_profile">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">get_user_profile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.get_user_profile" title="Link to this definition"></a></dt>
+<dd><p>Obtener la información del perfil del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>JSON que contiene:</dt><dd><ul class="simple">
+<li><p>name (str): Nombre del usuario.</p></li>
+<li><p>surname (str): Apellido del usuario.</p></li>
+<li><p>username (str): Nombre de usuario.</p></li>
+<li><p>email (str): Correo electrónico del usuario.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.hello">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">hello</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.hello" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.log_user">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">log_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.log_user" title="Link to this definition"></a></dt>
+<dd><p>Iniciar sesión a un usuario dandole un token de autenticación.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- username (str): Nombre de usuario.
+- password (str): Contraseña del usuario.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.obtener_fechas">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">obtener_fechas</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.obtener_fechas" title="Link to this definition"></a></dt>
+<dd><p>Obtener los recordatorios de un usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Una lista de diccionarios que contiene los recordatorios.</dt><dd><dl class="simple">
+<dt>Cada diccionario tiene las siguientes claves:</dt><dd><ul class="simple">
+<li><p>id (str): Id del recordatorio.</p></li>
+<li><p>recordatorio (str): Mensaje de recordatorio.</p></li>
+<li><p>fecha (str): Fecha del recordatorio.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.obtener_galeria">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">obtener_galeria</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.obtener_galeria" title="Link to this definition"></a></dt>
+<dd><p>NO USADA. Obtener todas las imagenes del directorio del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Una lista de diccionarios que contiene las imagenes.</dt><dd><dl class="simple">
+<dt>Cada diccionario tiene las siguientes claves:</dt><dd><ul class="simple">
+<li><p>imagen (str): Imagen en Base64.</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.obtener_markers">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">obtener_markers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.obtener_markers" title="Link to this definition"></a></dt>
+<dd><p>Obtener todas las lesiones del seguimiento de la base de datos.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>JSON que contiene:</dt><dd><ul class="simple">
+<li><p>id (int): Identificador de la lesión.</p></li>
+<li><p>x (int): Coordenada X de la lesión.</p></li>
+<li><p>y (int): Coordenada Y de la lesión.</p></li>
+<li><p>lugar (str): Lugar de la lesión en el cuerpo.</p></li>
+<li><p>body (str): Lugar de la lesión en el cuerpo(frontal/trasera).</p></li>
+<li><p>imagen (str): Imagen en Base64.</p></li>
+<li><p>probabilidad (str): Probabilidad de malignidad.</p></li>
+<li><p>predicciones (str): Array con las predicciones.</p></li>
+<li><p>color (str): Color asociado al riesgo.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.procesar_url">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">procesar_url</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.procesar_url" title="Link to this definition"></a></dt>
+<dd><p>Procesa una URL guardando la imagen en el servidor para posteriormente analizarla.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>dict</strong> – JSON con los datos del formulario que contiene:.
+- url (str): Dirección de imagen.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>JSON que contiene:</dt><dd><ul class="simple">
+<li><p>imagen (str): Imagen codificada.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.protected">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">protected</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.protected" title="Link to this definition"></a></dt>
+<dd><p>Punto final protegido que requiere autenticación JWT.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>JSON con el usuario autenticado.</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.schedule_email">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">schedule_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recordatorio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fecha</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.schedule_email" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.sendMailToServer">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">sendMailToServer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.sendMailToServer" title="Link to this definition"></a></dt>
+<dd><p>Enviar mensaje de contacto al correo del sistema.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>dict</strong> – JSON con los datos del formulario que contiene:
+- mensaje (str): Mensaje del usuario.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.sendMailToServer_simple">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">sendMailToServer_simple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.sendMailToServer_simple" title="Link to this definition"></a></dt>
+<dd><p>Enviar mensaje de contacto al correo del sistema de un usuario anónimo.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dict</strong> – JSON con los datos del formulario que contiene:
+- email (str): Email del usuario.
+- user (str): Nombre del usuario.
+- mensaje (str): Mensaje del usuario.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.send_basic_mail">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">send_basic_mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">remitente</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">remitente_mail</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.send_basic_mail" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.send_recordatorio">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">send_recordatorio</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">recordatorio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.send_recordatorio" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.send_validation_code">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">send_validation_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">code</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">email</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.send_validation_code" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.set_perfil_image">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">set_perfil_image</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.set_perfil_image" title="Link to this definition"></a></dt>
+<dd><p>Actualizar la imagen del perfil del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>dict</strong> – JSON con los datos del formulario que contiene:
+- imagen (str): Imagen en Base64.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.set_user_profile">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">set_user_profile</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.set_user_profile" title="Link to this definition"></a></dt>
+<dd><p>Actualizar la información del perfil del usuario.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>dict</strong> – JSON con los datos del formulario que contiene:.
+- name (str): Nombre del usuario.
+- surname (str): Apellido del usuario.
+- username (str): Nombre de usuario.
+- email (str): Correo electrónico del usuario.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.to_path64">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">to_path64</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.to_path64" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.to_pathWEB">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">to_pathWEB</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#user.to_pathWEB" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.update_analisis">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">update_analisis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.update_analisis" title="Link to this definition"></a></dt>
+<dd><p>Actualizar un análisis del seguimiento.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>Token</strong> (<em>JWT</em>) – Token de autentificación.</p></li>
+<li><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- id (Integer): Id de la lesión.
+- imagen (str): Imagen en Base64.
+- predicciones (str): Array con las predicciones.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="user.validate_user">
+<span class="sig-prename descclassname"><span class="pre">user.</span></span><span class="sig-name descname"><span class="pre">validate_user</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#user.validate_user" title="Link to this definition"></a></dt>
+<dd><p>Validar un usuario en el sistema.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>json</strong> (<em>dict</em>) – JSON con los datos del formulario que contiene:
+- username (str): Nombre de usuario.
+- code (str): Código del usuario.</p>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Un diccionario con el mensaje de éxito o error.</dt><dd><ul class="simple">
+<li><p>mensaje (str): Mensaje de éxito o error.</p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="analyze.html" class="btn btn-neutral float-left" title="analyze module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2024, ARTURO SÁNCHEZ SÁNCHEZ.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
